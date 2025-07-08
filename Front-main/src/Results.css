@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* View Results Container */
+.view-results {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input Box */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Results Table */
+.results-table table, 
+.details-table {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td,
+.details-table th,
+.details-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd; /* Visible lines between cells */
+    font-size: 16px;
+}
+
+.results-table th,
+.details-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.results-table tr:nth-child(even),
+.details-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+.results-table tr:hover,
+.details-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Expandable Details Section */
+.details-row {
+    background-color: #fafafa;
+}
+
+.details-table th,
+.details-table td {
+    font-size: 14px; /* Slightly smaller font for the details */
+}
+
+/* Button in the Table */
+.results-table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.results-table button:hover {
+    background-color: #218838;
+}
+
+/* Headings */
+h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Scrollbar Styling for Large Tables */
+.results-table,
+.details-table {
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
